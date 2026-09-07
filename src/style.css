@@ -5,6 +5,13 @@
 }
 
 @font-face {
+  font-family: 'Nexa';
+  src: url('/fonts/Nexa-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Tommy';
   src: url('/fonts/MADE Tommy Soft Regular PERSONAL USE.otf') format('opentype');
   font-weight: normal;
