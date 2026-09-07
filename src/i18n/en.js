@@ -8,7 +8,11 @@ const en = {
       contact: "My contact details:"
     },
     window: {
-      intro: "introduction"
+      intro: "introduction",
+      projects: "projects"
+    },
+    projects: {
+      title: "My projects",
     }
   }
 };

@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import "./i18n/index.js";
 
+const date = new Date()
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <main>
@@ -16,6 +18,7 @@ createRoot(document.getElementById('root')).render(
         </svg>
       </div>
       <App />
+      <p className='copyright'>Copyright &copy; {date.getFullYear()} Benkraco / Benjamin Kracovitz</p>
     </main>
   </StrictMode>,
 )
