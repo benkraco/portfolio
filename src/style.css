@@ -256,7 +256,7 @@ main {
 }
 
 .intro img {
-  width: 200px;
+  width: 210px;
   transition: transform 0.2s ease, filter 0.2s ease;
   box-shadow: 1px 1px 7.5px black;
 }
