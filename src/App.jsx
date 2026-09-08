@@ -4,7 +4,7 @@ import "./style.css";
 import TaskBar from "./components/TaskBar";
 import DesktopApp from "./components/DesktopApp";
 import AppWindow from "./AppWindow";
-
+ 
 function App() {
   const [activeApp, setActiveApp] = useState("intro");
 
