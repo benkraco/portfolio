@@ -156,24 +156,34 @@ main {
   border-radius: 5px;
 }
 
-.top-left {
-  top: 3%;
+.aboutme {
+  top: 13%;
   left: 5%;
 }
 
-.top-right {
+.education {
   top: 15%;
-  right: 3%;
+  right: 2%;
 }
 
-.bottom-left {
-  bottom: 8%;
+.projects {
+  top: 37%;
   left: 2%;
 }
 
-.bottom-right {
-  bottom: 10%;
-  right: 8%;
+.development {
+  top: 36%;
+  right: 4%;
+}
+
+.music {
+  top: 60%;
+  left: 5%;
+}
+
+.socialmedia {
+  top: 58%;
+  right: 1%;
 }
 
 .app-window {

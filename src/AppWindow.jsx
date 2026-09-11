@@ -1,20 +1,28 @@
 import Intro from "./pages/Intro";
 import AboutMe from "./pages/AboutMe";
+import Education from "./pages/Education";
 import Projects from "./pages/Projects";
+import Development from "./pages/Development";
+import Music from "./pages/Music";
+import SocialMedia from "./pages/SocialMedia";
 
 import { useTranslation } from "react-i18next";
 
-import close from './assets/x-solid.png'
-import maximize from './assets/window-restore-solid.png'
-import minimize from './assets/window-minimize-solid.png'
+import close from "./assets/x-solid.png";
+import maximize from "./assets/window-restore-solid.png";
+import minimize from "./assets/window-minimize-solid.png";
 
 function AppWindow({ activeApp, setActiveApp }) {
   const { t } = useTranslation();
 
   const apps = {
     intro: <Intro />,
-    about: <AboutMe />,
+    aboutme: <AboutMe />,
+    education: <Education />,
     projects: <Projects />,
+    development: <Development />,
+    music: <Music />,
+    socialmedia: <SocialMedia />,
   };
 
   const handleClose = () => {
@@ -36,9 +44,7 @@ function AppWindow({ activeApp, setActiveApp }) {
         </div>
       </div>
 
-      <div className="app-window-content">
-        {apps[activeApp]}
-      </div>
+      <div className="app-window-content">{apps[activeApp]}</div>
     </div>
   );
 }
