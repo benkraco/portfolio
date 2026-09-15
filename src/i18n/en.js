@@ -1,10 +1,7 @@
 const en = {
   translation: {
     intro: {
-      list: `- Fullstack Developer
-      - {{age}} years old
-      - Ciudad Autonoma de Buenos Aires, Argentina
-      - Computer Science student at ORT School`,
+      subtitle: `Fullstack Developer`,
       contact: "My contact details:"
     },
     window: {
@@ -18,6 +15,12 @@ const en = {
     },
     projects: {
       title: "My projects",
+    },
+        education: {
+      highschool: "High School Diploma in Computer Science",
+      elementaryschool: "Elementary School",
+      kindergarten: "Kindergarten",
+      cambridge: "December 2025"
     }
   }
 };

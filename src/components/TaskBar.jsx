@@ -18,10 +18,10 @@ function TaskBar() {
       year: "numeric",
     });
     time = date.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true,
-  });
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
   }
 
   const changeLanguage = (language) => {
@@ -30,7 +30,7 @@ function TaskBar() {
 
   return (
     <nav className="taskbar">
-      <div className="taskbar-right">
+      <div className="taskbar-left">
         <div className="language-switcher">
           <button
             className={i18n.language === "es" ? "active" : ""}
@@ -48,7 +48,8 @@ function TaskBar() {
             EN
           </button>
         </div>
-
+      </div>
+      <div className="taskbar-right">
         <span className="taskbar-time">{day}</span>
         <span className="taskbar-time">{time}</span>
       </div>

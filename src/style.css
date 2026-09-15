@@ -77,7 +77,7 @@ main {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0 16px;
   font-family: 'Tommy';
 }
@@ -268,21 +268,52 @@ main {
 .intro img {
   width: 210px;
   transition: transform 0.2s ease, filter 0.2s ease;
-  box-shadow: 1px 1px 7.5px black;
+  border-radius: 10px;
 }
 
 .intro img:hover {
   transform: translateY(-5px);
 }
 
-.introTexts h1 {
-  font-family: 'Nexa';
-  margin-bottom: 1%;
+.introTexts {
+  text-align: center;
 }
 
-.introTexts p {
+.introTexts h1 {
+  font-family: 'Nexa';
+  position: relative;
+  background: linear-gradient(90deg,
+      #eaa9f2,
+      #48c0f0,
+      #7dd693,
+      #efaa28,
+      #fc9163);
+  background-size: 300% 100%;
+  background-position: 0% 50%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: titleGradient 6s ease-in-out infinite;
+}
+
+@keyframes titleGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.introTexts h2 {
   font-family: 'Tommy';
-  white-space: pre-line;
+  font-weight: normal;
+  margin-bottom: 10%;
 }
 
 .introContact {
@@ -316,7 +347,7 @@ main {
   margin-right: 3%;
 }
 
-.introContact div a:hover {
+.introContact a:hover {
   text-decoration: underline;
 }
 
@@ -366,6 +397,67 @@ main {
 
 .projectText p {
   font-family: 'Tommy';
+}
+
+.educationContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.educationContainer .collage {
+  width: min(600px, 90%);
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.educationLogo {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.educationLogo img {
+  max-width: 150px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.educationInfo {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.educationInfo h2 {
+  font-family: "Nexa";
+  font-size: 1.6rem;
+  margin: 0 0 5px;
+}
+
+.educationInfo h3 {
+  font-family: "Tommy";
+  font-size: 1.05rem;
+  margin: 0 0 6px;
+}
+
+.educationInfo span {
+  font-family: "Tommy";
+  font-size: 0.9rem;
+}
+
+.separador {
+  width: 90%;
+  height: 3px;
+  background: #000;
+  margin: 25px auto;
 }
 
 .waves {

@@ -4,14 +4,14 @@ import { getAge } from "../hooks/useBirthday";
 
 function Intro() {
   const { t } = useTranslation();
-  const age = getAge()
+  const age = getAge();
 
   return (
     <div className="intro">
       <img src={yo} alt="Intro Image" />
       <div className="introTexts">
         <h1>Benjamin Kracovitz</h1>
-        <p>{t("intro.list", { age })}</p>
+        <h2>{t("intro.subtitle")}</h2>
 
         <div className="introContact">
           <h3>{t("intro.contact")}</h3>
