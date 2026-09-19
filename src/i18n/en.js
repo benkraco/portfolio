@@ -21,6 +21,14 @@ const en = {
       elementaryschool: "Elementary School",
       kindergarten: "Kindergarten",
       cambridge: "December 2025"
+    },
+    development: {
+      languages: "Languages",
+      frameworks: "Frameworks & Libraries",
+      database: "Databases",
+      tools: "Tools",
+      design: "Design & Multimedia",
+      infrastructure: "Infrastructure"
     }
   }
 };

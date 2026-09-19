@@ -23,6 +23,14 @@ const es = {
       elementaryschool: "Nivel primario",
       kindergarten: "Jardín de infantes",
       cambridge: "Diciembre 2025"
+    },
+    development: {
+      languages: "Lenguajes",
+      frameworks: "Frameworks y Librerías",
+      database: "Bases de Datos",
+      tools: "Herramientas",
+      design: "Diseño y Multimedia",
+      infrastructure: "Infraestructura"
     }
   }
 };

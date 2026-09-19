@@ -235,6 +235,11 @@ main {
   margin-top: 2px;
 }
 
+.windowControls button:hover {
+  background-color: #3a3a3a;
+  border-radius: 5px;
+}
+
 .app-window-content {
   flex: 1;
   overflow-y: auto;
@@ -282,12 +287,18 @@ main {
 .introTexts h1 {
   font-family: 'Nexa';
   position: relative;
-  background: linear-gradient(90deg,
-      #eaa9f2,
-      #48c0f0,
-      #7dd693,
-      #efaa28,
-      #fc9163);
+  background: linear-gradient(
+    90deg,
+    #ff3b30,
+    #ff9500,
+    #ffcc00,
+    #34c759,
+    #00c7ff,
+    #007aff,
+    #5856d6,
+    #af52de,
+    #ff2d55
+  );
   background-size: 300% 100%;
   background-position: 0% 50%;
   color: transparent;
@@ -325,38 +336,84 @@ main {
   font-family: 'Nexa';
 }
 
-.introContact div {
+.contactButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   margin-top: 2%;
 }
 
-.introContact div a {
-  padding: 1.5%;
+.contactButtons a,
+.emailButton {
+  padding: 7px;
   color: white;
   font-family: 'Tommy';
+  font-size: 16px;
   border-radius: 5px;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
-.introContact div a:first-child {
+.emailContainer {
+  position: relative;
+}
+
+.emailButton {
   background-color: #c71610;
-  margin-right: 3%;
 }
 
-.introContact div a:last-child {
-  background-color: #0a66c2;
-  margin-right: 3%;
-}
-
-.introContact a:hover {
+.emailButton:hover {
+  background-color: #b1140e;
   text-decoration: underline;
 }
 
-.introContact div a:hover:first-child {
-  background-color: #b1140e;
+.contactButtons a {
+  background-color: #0a66c2;
 }
 
-.introContact div a:hover:last-child {
+.contactButtons a:hover {
   background-color: #0859aa;
+  text-decoration: underline;
+}
+
+.copyPopover {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px 12px;
+  background-color: black;
+  color: white;
+  font-family: 'Tommy';
+  font-size: 13px;
+  border-radius: 5px;
+  white-space: nowrap;
+  animation: popoverAppear 0.2s ease-out;
+}
+
+.copyPopover::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+@keyframes popoverAppear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }
 
 .project {
@@ -405,13 +462,13 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  padding-right: 5%;
 }
 
 .educationContainer .collage {
-  width: min(600px, 90%);
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 10px;
 }
 
 .educationLogo {
@@ -458,6 +515,70 @@ main {
   height: 3px;
   background: #000;
   margin: 25px auto;
+}
+
+.developmentContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+.developmentContainer>div {
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.developmentContainer h1 {
+  font-family: 'Nexa';
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.technology {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.technology>div {
+  width: 100px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.technology>div:hover {
+  transform: translateY(-4px);
+  background-color: #e8e8e8;
+}
+
+.technology img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.technology p {
+  font-family: 'Tommy';
+  font-size: 14px;
+  text-align: center;
 }
 
 .waves {
