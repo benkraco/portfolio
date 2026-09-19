@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
 import yo from "../assets/yo.jpeg";
-import { getAge } from "../hooks/useBirthday";
 import { useState } from "react";
 
 function Intro() {
   const { t } = useTranslation();
-  const age = getAge();
   const [copied, setCopied] = useState(false);
 
   const copyEmail = async () => {

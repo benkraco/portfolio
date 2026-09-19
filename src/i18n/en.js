@@ -17,7 +17,7 @@ const en = {
       title: "My projects",
     },
         education: {
-      highschool: "High School Diploma in Computer Science",
+      highschool: "High School (Computer Science)",
       elementaryschool: "Elementary School",
       kindergarten: "Kindergarten",
       cambridge: "December 2025"

@@ -58,7 +58,7 @@ function App() {
         <AppWindow activeApp={activeApp} setActiveApp={setActiveApp} />
       </div>
 
-      <TaskBar />
+      <TaskBar setActiveApp={setActiveApp} />
     </div>
   );
 }
