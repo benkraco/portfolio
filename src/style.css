@@ -42,6 +42,7 @@ main {
   transform: translateX(-50%);
   z-index: 1;
   font-family: 'Tommy';
+  text-align: center;
 }
 
 .content {
@@ -458,13 +459,20 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 4%;
+  padding-bottom: 4%;
+  border-bottom: 3px solid black;
+  margin-top: 2%;
 }
 
 .projects h1:first-child {
   font-family: 'Nexa';
   text-align: center;
   margin-bottom: 2%;
+}
+
+.project:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .projectName {
@@ -555,13 +563,20 @@ main {
 
 .developmentContainer {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
   gap: 25px;
   padding: 10px;
+  align-items: flex-start;
 }
 
-.developmentContainer>div {
+.developmentColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.developmentColumn>div {
   border: 3px solid black;
   border-radius: 12px;
   padding: 20px;
@@ -702,5 +717,297 @@ main {
 
   100% {
     transform: translateX(1%);
+  }
+}
+
+.mobile-menu-button,
+.offcanvas,
+.offcanvas-overlay {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-menu-button {
+    display: block;
+    border: none;
+    background: none;
+    color: white;
+    font-family: inherit;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .app-window-header {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .app-window-header>span {
+    flex: 1;
+  }
+
+  .offcanvas-overlay {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  .offcanvas {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    max-width: 320px;
+    height: 100%;
+    z-index: 11;
+    background-color: #FFF6E5;
+    border-right: 4px solid black;
+  }
+
+  .offcanvas-header {
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Tommy';
+    font-weight: bold;
+  }
+
+  .offcanvas-header button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .offcanvas-header img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .offcanvas-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 8px;
+    overflow-y: auto;
+  }
+
+  .offcanvas-content button {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-family: 'Tommy';
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .offcanvas-content button:hover {
+    background-color: #d8d1c2;
+  }
+
+  .content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    border: none;
+    border-radius: 0;
+  }
+
+  .desktop {
+    width: 100%;
+    height: 100%;
+  }
+
+  .desktop-app {
+    display: none;
+  }
+
+  .taskbar {
+    display: none;
+  }
+
+  .app-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+  }
+
+  .app-window-header {
+    border-radius: 0;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .copyrightMobile {
+    font-family: 'Tommy';
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+
+  .offcanvas-language {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Tommy';
+  }
+
+  .offcanvas-language>span {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .offcanvas-language div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .offcanvas-language button {
+    width: auto;
+    border: none;
+    background: none;
+    padding: 2px;
+    font-family: 'Tommy';
+    font-size: 14px;
+  }
+
+  .offcanvas-language button.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .offcanvas-language div span {
+    color: #777;
+  }
+
+  .app-window-content {
+    padding: 25px 20px;
+  }
+
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro img {
+    width: 225px;
+    max-width: 70vw;
+  }
+
+  .introTexts {
+    width: 100%;
+  }
+
+  .introTexts h1 {
+    font-size: clamp(32px, 10vw, 48px);
+    line-height: 1.05;
+  }
+
+  .introTexts h2 {
+    font-size: 25px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+  }
+
+  .introContact {
+    margin-top: 0;
+  }
+
+  .introContact h3 {
+    font-size: 25px;
+  }
+
+  .contactButtons {
+    gap: 10px;
+  }
+
+  .contactButtons a,
+  .emailButton {
+    display: flex;
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project.project.quorum {
+    flex-direction: column-reverse;
+  }
+
+  .developmentContainer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .developmentColumn {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .developmentColumn>div {
+    padding: 15px;
+    border-width: 3px;
+  }
+
+  .developmentContainer h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .technology {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .technology>div {
+    width: 100%;
+    min-height: 95px;
+    padding: 8px;
+  }
+
+  .technology img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .technology p {
+    font-size: 13px;
   }
 }

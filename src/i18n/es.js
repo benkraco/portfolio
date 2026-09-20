@@ -11,10 +11,10 @@ const es = {
       education: "Educación",
       development: "Tecnologías",
       music: "Música",
-      socialmedia: "Redes Sociales"
+      socialmedia: "Redes Sociales",
+      language: "Lenguaje"
     },
     projects: {
-      title: "Mis proyectos",
       nutrinfoText: `Project Leader y Desarrollador Fullstack en Nutrinfo, un sitio web desarrollado en el marco del proyecto final de 4to año de Informática en la Escuela ORT la cual te explica de forma coloquial la información nutricional de los alimentos que uno consume y en base a si es bueno nutricional o personalmente para el usuario mostrarle si debería comerlo o no.`,
       quorumText: `Desarrollador Fullstack en Quórum, una aplicación móvil desarrollado en el marco del proyecto final de 5to año de Informática en la Escuela ORT la cual busca simplificar y ayudar la organización de juntadas y eventos sociales, centralizando en un solo lugar las decisiones relacionadas con cuándo, dónde y cómo juntarse`
     },

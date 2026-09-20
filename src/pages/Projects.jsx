@@ -7,7 +7,6 @@ function Projects() {
 
   return (
     <div className="projects">
-      <h1>{t("projects.title")}</h1>
       <div className="project nutrinfo">
         <div className="projectName">
           <h1>Nutrinfo (2025)</h1>

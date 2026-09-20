@@ -11,12 +11,13 @@ const en = {
       education: "Education",
       development: "Development",
       music: "Music",
-      socialmedia: "Social Media"
+      socialmedia: "Social Media",
+      language: "Language"
     },
     projects: {
-      title: "My projects",
+      title: "My projects", // despues sacar
     },
-        education: {
+    education: {
       highschool: "High School (Computer Science)",
       elementaryschool: "Elementary School",
       kindergarten: "Kindergarten",
