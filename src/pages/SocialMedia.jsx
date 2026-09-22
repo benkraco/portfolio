@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 function SocialMedia() {
+  const { t } = useTranslation();
+
   return (
-    <>
-    Social Media / Redes Sociales
-    </>
+    <div className="placeholder">
+      <p>🏗️ {t("placeholder.comingsoon")} 🚧</p>
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import useClock from "../hooks/useClock";
 import { useTranslation } from "react-i18next";
-import { IconHomeFilled, IconFileTextFilled } from "@tabler/icons-react";
+import { IconHome2Filled, IconClipboardTextFilled } from "@tabler/icons-react";
 
 function TaskBar({ setActiveApp }) {
   const date = useClock();
@@ -40,14 +40,14 @@ function TaskBar({ setActiveApp }) {
     <nav className="taskbar">
       <div className="taskbar-left">
         <button onClick={handleHome}>
-          <IconHomeFilled /> Home
+          <IconHome2Filled /> Home
         </button>
         <a
           href="https://blog.benkraco.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IconFileTextFilled /> Blog
+          <IconClipboardTextFilled /> Blog
         </a>
       </div>
 

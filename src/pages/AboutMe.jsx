@@ -1,7 +1,24 @@
+import { useTranslation } from "react-i18next";
+import { getAge } from "../hooks/useBirthday";
+import yo2 from "../assets/yo2.jpg";
+
 function AboutMe() {
+  const { t } = useTranslation();
+  const age = getAge();
+
   return (
     <>
-    About Me / Sobre Mi
+      <div className="sobremi">
+        <div className="introduction">
+          <img src={yo2} alt="Imagen Yo" />
+          <div>
+            <p
+              dangerouslySetInnerHTML={{ __html: t("aboutme.list", { age }) }}
+            />
+          </div>
+        </div>
+        <p className="textAbout">{t("aboutme.intro")}</p>
+      </div>
     </>
   );
 }
