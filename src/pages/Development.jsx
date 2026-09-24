@@ -192,6 +192,13 @@ function Development() {
                 />
                 <p>Postman</p>
               </div>
+              <div>
+                <img
+                  src="https://images.icon-icons.com/836/PNG/512/Trello_icon-icons.com_66775.png"
+                  alt="Icon Trello"
+                />
+                <p>Trello</p>
+              </div>
             </div>
           </div>
           <div>

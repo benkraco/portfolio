@@ -17,7 +17,12 @@ function AboutMe() {
             />
           </div>
         </div>
-        <p className="textAbout">{t("aboutme.intro")}</p>
+        <h3>{t("aboutme.title1")}</h3>
+        <p className="textAbout">{t("aboutme.description1")}</p>
+        <h3>{t("aboutme.title2")}</h3>
+        <p className="textAbout">{t("aboutme.description2")}</p>
+        <h3>{t("aboutme.title3")}</h3>
+        <p className="textAbout">{t("aboutme.description3")}</p>
       </div>
     </>
   );

@@ -119,10 +119,177 @@ function Projects() {
             {selectedProject === "nutrinfo" ? (
               <div>
                 <h1>Nutrinfo</h1>
+                <h3>{t("projects.tools")}</h3>
+                <div className="technologies">
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=cs"
+                      alt="Icon C#"
+                    />
+                    <p>C#</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=dotnet"
+                      alt="Icon .NET"
+                    />
+                    <p>.NET</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/4/41/Microsoft_SQL_Server_2025_icon.svg"
+                      alt="Icon SQL Server"
+                    />
+                    <p>SQL Server</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=html"
+                      alt="Icon HTML"
+                    />
+                    <p>HTML</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=css"
+                      alt="Icon CSS"
+                    />
+                    <p>CSS</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=js"
+                      alt="Icon JavaScript"
+                    />
+                    <p>JavaScript</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=figma"
+                      alt="Icon Figma"
+                    />
+                    <p>Figma</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=ps"
+                      alt="Icon Adobe Photoshop"
+                    />
+                    <p>Adobe Photoshop</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=ai"
+                      alt="Icon Adobe Illustrator"
+                    />
+                    <p>Adobe Illustrator</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://images.icon-icons.com/836/PNG/512/Trello_icon-icons.com_66775.png"
+                      alt="Icon Trello"
+                    />
+                    <p>Trello</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=bootstrap"
+                      alt="Icon Bootstrap"
+                    />
+                    <p>Bootstrap</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=github"
+                      alt="Icon GitHub"
+                    />
+                    <p>GitHub</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=vscode"
+                      alt="Icon Visual Studio Code"
+                    />
+                    <p>Visual Studio Code</p>
+                  </div>
+                </div>
               </div>
             ) : selectedProject === "quorum" ? (
               <div>
                 <h1>Quórum</h1>
+                <h3>{t("projects.tools")}</h3>
+                <div className="technologies">
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=react&theme=light"
+                      alt="Icono React Native"
+                    />
+                    <p>React Native</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=supabase"
+                      alt="Icono Supabase"
+                    />
+                    <p>Supabase</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://images.icon-icons.com/2389/PNG/512/expo_logo_icon_145293.png"
+                      alt="Icono Expo"
+                    />
+                    <p>Expo</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=nodejs"
+                      alt="Icono Node.js"
+                    />
+                    <p>Node.js</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=js"
+                      alt="Icono JavaScript"
+                    />
+                    <p>JavaScript</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=github"
+                      alt="Icono GitHub"
+                    />
+                    <p>GitHub</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=vscode"
+                      alt="Icono Visual Studio Code"
+                    />
+                    <p>Visual Studio Code</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=figma"
+                      alt="Icono Figma"
+                    />
+                    <p>Figma</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://skillicons.dev/icons?i=ai"
+                      alt="Icono Adobe Illustrator"
+                    />
+                    <p>Adobe Illustrator</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://images.icon-icons.com/836/PNG/512/Trello_icon-icons.com_66775.png"
+                      alt="Icon Trello"
+                    />
+                    <p>Trello</p>
+                  </div>
+                </div>
               </div>
             ) : selectedProject === "blog" ? (
               <div>
